@@ -11,6 +11,6 @@ export const renderIndexPage = () => {
 
 
 export const loadJavascript = () => {
-    const js = readFileSync(join(PUBLIC_PATH, 'index.js'), 'utf-8');
+    const js = readFileSync(join(PUBLIC_PATH, 'browserSniffer.js'), 'utf-8');
     return new Response(js, { headers: { 'Content-Type': 'application/javascript' } });
 }
