@@ -14,3 +14,9 @@ export const loadJavascript = () => {
     const js = readFileSync(join(PUBLIC_PATH, 'browserSniffer.js'), 'utf-8');
     return new Response(js, { headers: { 'Content-Type': 'application/javascript' } });
 }
+
+
+export const loadStyles = () => {
+    const css = readFileSync(join(PUBLIC_PATH, 'styles.css'), 'utf-8');
+    return new Response(css, { headers: { 'Content-Type': 'text/css' } });
+}
