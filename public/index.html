@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .info-container {
+            background-color: #716c6c;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-container h1 {
+            margin-bottom: 20px;
+        }
+        .info-item {
+            margin-bottom: 10px;
+        }
+        .info-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="info-container">
+    <h1>Browser Information</h1>
+    <div class="info-item"><span class="info-label">Browser Name:</span> <span id="browserName"></span></div>
+    <div class="info-item"><span class="info-label">Browser Version:</span> <span id="browserVersion"></span></div>
+    <div class="info-item"><span class="info-label">Platform:</span> <span id="platform"></span></div>
+    <div class="info-item"><span class="info-label">User Agent:</span> <span id="userAgent"></span></div>
+</div>
+
+<script src="/browser"></script>
+</body>
+</html>
